@@ -23,8 +23,6 @@ class WebAdminApplicationTests {
     void contextLoads() {
         Long aLong = jdbcTemplate.queryForObject("select count(*) from user", Long.class);
         System.out.println(aLong);
-        System.out.println("1");
-        System.out.println("2");
         log.info("记录总数：{}",aLong);
 
         log.info("数据源类型：{}",dataSource.getClass());
