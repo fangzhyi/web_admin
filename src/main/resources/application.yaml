@@ -28,9 +28,9 @@ spring:
           enabled: true
           config:
             drop-table-allow: false
+#mybatis:
+#  config-location: classpath:
 
-  jdbc:
-    template:
-      query-timeout: 3
-
-
+    jdbc:
+        template:
+          query-timeout: 3
